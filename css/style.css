@@ -72,6 +72,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .user-form input[type="search"] {
@@ -136,7 +137,7 @@ body {
 .user-form:hover input {
 	background-color: #212a3a;
 	border-color: transparent;
-	padding-bottom: 7px;	
+		
 }
 
 .search-logo:active::before {
@@ -1158,16 +1159,7 @@ body {
 }
 
 .producers-item {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	display: table;
 	width: 220px;
 	height: 145px;
 	border: 1px solid #eaeaea;
@@ -1186,8 +1178,10 @@ body {
 }
 
 .producers-item a {
-	margin-left: auto ;
-	margin-right: auto;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	
 }
 
 .main-page-catalog {
@@ -1244,7 +1238,7 @@ body {
 
 .filter-range {
 	-webkit-box-sizing: content-box;
-	        box-sizing: content-box;
+	box-sizing: content-box;
 	font-size: 17px;
 	line-height: 18px;
 	color: #000000;
