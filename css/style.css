@@ -2193,7 +2193,6 @@ a.arrow {
   border-radius: 1px;
 }
 
-
 .modal-content-close::before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
