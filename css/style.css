@@ -2122,6 +2122,33 @@ a.arrow {
 	margin-right: 50px;
 }
 
+@keyframes bounce {
+  0%   {
+    transform: translateX(-800px);
+  }
+  70%  {
+    transform: translateX(30px);
+  }
+  90%  {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-write-us {
 	position: absolute;
   top: 2525px;
@@ -2137,6 +2164,10 @@ a.arrow {
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -2365,6 +2396,7 @@ position: absolute;
 	text-align: center;
 	padding-top: 10px;
 	border-radius: 3px;
+	border: 2px solid gray;
 }
 
 .next-bay-btn:hover {
@@ -2374,4 +2406,9 @@ position: absolute;
 .next-bay-btn:active {
 	color: #000000;
 	opacity: 0.3;
+}
+
+.modal-content-show {
+  display: block;
+	animation: bounce 0.6s;
 }

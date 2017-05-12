@@ -249,8 +249,10 @@
 		    		<section class="our-contacts">
 							<h2>КОНТАКТЫ</h2>
 							<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-			    		<img src="img/map.jpg" width="300" height="160" alt="map">
-			  			<a class="page-btn" href="#">Заблудились? НапиШИТЕ НАМ!</a>
+		    			<a class="js-open-map" href="#">
+			    			<img src="img/map.jpg" width="300" height="160" alt="map">
+			    		</a>
+			  			<a class="page-btn button-write-us" href="#">Заблудились? НапиШИТЕ НАМ!</a>
 		    		</section>
 		  		</div>
         </div>
@@ -302,7 +304,7 @@
   	</footer>
   	<div class="modal-write-us">
   		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    	<form class="authorization form" action="https://echo.htmlacademy.ru" method="post">
+    	<form class="authorization-form" action="https://echo.htmlacademy.ru" method="post">
     		<div class="icon-user">
       		<label for="icon-user-id">Ваше имя:</label>
       	 	<input  id="icon-user-id" type="text" name="login" placeholder="Представтесь, пожалуйста">
@@ -320,7 +322,7 @@
   	</div>
   	<div class="modal-content-map">
     	<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    	<div id="yandex-map"></div>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6379535423475!2d30.321201415804!3d59.93814958187598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9f81cb3%3A0xb813441ee345d51!2z0JzQtdC00LjQutC-LdC_0YHQuNGF0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQutC-0L3RgdGD0LvRjNGC0LDRhtC40L7QvdC90YvQuSDRhtC10L3RgtGA!5e0!3m2!1sru!2sua!4v1494602748075" width="940" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
   	</div>
   	<div class="modal-basket">
     	<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
@@ -330,5 +332,73 @@
      		<a class="next-bay-btn" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
     	</div>
   	</div>
+		<script>
+			var link = document.querySelector(".button-write-us");
+      var popup = document.querySelector(".modal-write-us");
+      var close = popup.querySelector(".modal-content-close");
+			var form = popup.querySelector(".authorization-form");
+			var login = popup.querySelector("[name=login]");
+			var email = popup.querySelector("[name=email]");
+			var storageLogin = localStorage.getItem("login");
+			var storageEmail = localStorage.getItem("email");
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+				if (storageLogin) {
+					login.value = storageLogin;
+				}
+				if (storageEmail) {
+					email.value = storageEmail;
+				}
+				login.focus();
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+				popup.classList.remove("modal-error");
+      });
+				
+				form.addEventListener("submit", function(event) {
+         if (!login.value || !email.value) {
+          event.preventDefault();
+					popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("login", login.value);
+					localStorage.setItem("email", login.value);
+        }
+      });
+			window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+						popup.classList.remove("modal-error");
+          }
+        }
+      });
+			
+			var mapOpen = document.querySelector(".js-open-map");
+			var mapPopup = document.querySelector(".modal-content-map");
+      var mapClose = mapPopup.querySelector(".modal-content-close");
+			 mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal-content-show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-content-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-content-show")) {
+            mapPopup.classList.remove("modal-content-show");
+          }
+        }
+      });
+		</script>>  	
 	</body>
 </html>
