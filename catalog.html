@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
     <header class="main-header">
@@ -22,8 +22,31 @@
 		  		</div>
 		  		<div class="right-item">
 		    		<a class="bookmark-header" href="#">Закладки: 0</a>
-						<a class="basket" href="#">Корзина: 0</a>
-						<a class="green-background" href="#">Оформить заказ</a>
+						<ul class="basket-list">
+							<li><a href="#" class="basket basket-zero ">Корзина: 0</a></li>
+							<li><a href="#" class="basket">Корзина: 1</a></li>
+							<li><a href="#" class="basket">Корзина: 2</a></li>
+							<li><a href="#" class="basket">Корзина: 3</a></li>
+							<li><a href="#" class="basket">Корзина: 4</a></li>
+							<li><a href="#" class="basket">Корзина: 5</a></li>
+							<li><a href="#" class="basket">Корзина: 6</a></li>
+							<li><a href="#" class="basket">Корзина: 7</a></li>
+							<li><a href="#" class="basket">Корзина: 8</a></li>
+							<li><a href="#" class="basket">Корзина: 9</a></li>
+							<li><a href="#" class="basket basket-active">Корзина: 10</a></li>
+							<li><a href="#" class="basket">Корзина: 11</a></li>
+							<li><a href="#" class="basket">Корзина: 12</a></li>
+							<li><a href="#" class="basket">Корзина: 13</a></li>
+							<li><a href="#" class="basket">Корзина: 14</a></li>
+							<li><a href="#" class="basket">Корзина: 15</a></li>
+							<li><a href="#" class="basket">Корзина: 16</a></li>
+							<li><a href="#" class="basket">Корзина: 17</a></li>
+							<li><a href="#" class="basket">Корзина: 18</a></li>
+							<li><a href="#" class="basket">Корзина: 19</a></li>
+						</ul>
+						<div class="green-background">
+							<a  href="#">Оформить заказ</a>
+						</div>
 		  		</div>
 				</div>	
       </div>
@@ -68,18 +91,18 @@
 		  		<ul>
 		    		<li><a class="home-icon" href="index.html">Home</a></li>
 						<li><a>Каталог</a></li>
-						<li><a href="">Инструмент</a></li>
-						<li><a>Перфораторы</a></li>
+						<li><a class="breadcrumbs-tool" href="#">Инструмент</a></li>
+						<li><a class="breadcrumbs-tool" >Перфораторы</a></li>
 		  		</ul>
 				</div>
     		<section class="index-content ">
-    		  <div class="header-block">
-		    		<h2>Перфораторы:</h2>		
+    		  <div class="header-block-catalog">
+		    		<h2>Перфораторы</h2>		
 		  		</div>
         	<div class="wrapper-main-content">
           	<form class="filter-form" action="form-data.php" method="GET">
             	<h2>Фильтр:</h2>
-            	<fieldset>
+            	<fieldset class="composite-filter">
               	<legend>Цена:</legend>
               	<div class="filter-range">
               		<div class="range-controls">
@@ -91,29 +114,29 @@
               		</div>
               		<div class="price-controls">
               			<label  class="min-price" for="min-price-item"><input id="min-price-item" type="text" name="min-price" value="0"></label>
-              			<label class="max-price" for="max-price-item">-<input id="max-price-item" type="text" name="max-price" value="50000"></label>
+              			<label class="max-price" for="max-price-item">-<input id="max-price-item" type="text" name="max-price" value="30000"></label>
               		</div>
               	</div>
             	</fieldset>
           		<fieldset class="manufacturers">
               	<legend>Производители:</legend>
-              	<input id="checkbox-bosh" type="checkbox" name="checkbox-bosh" checked>
-              	<label class="checkbox-bosh-item" for="checkbox-bosh">bosh</label>
-              	<input id="checkbox-interskul" type="checkbox" name="checkbox-interskul">
-              	<label class="checkbox-interskul-item" for="checkbox-interskul">интерскул</label>
-              	<input id="checkbox-makita" type="checkbox" name="checkbox-makita" checked >
-              	<label class="checkbox-makita-item"  for="checkbox-makita">makita</label>
-              	<input id="checkbox-dewalt" type="checkbox" name="checkbox-dewalt">
-              	<label class="checkbox-dewalt-item" for="checkbox-dewalt">dewalt</label>
-              	<input  id="checkbox-hitachi" type="checkbox" name="checkbox-hitachi" >
-              	<label class="checkbox-hitachi-item" for="checkbox-hitachi">hitachi</label>  
+              	<input  class="manufacturers-check" id="checkbox-bosh" type="checkbox" name="checkbox-bosh" checked>
+              	<label class="checkbox-bosh-item" for="checkbox-bosh" tabindex="0" autofocus>bosh</label>
+              	<input class="manufacturers-check" id="checkbox-interskul" type="checkbox" name="checkbox-interskul">
+              	<label class="checkbox-interskul-item" for="checkbox-interskul" tabindex="0">интерскул</label>
+              	<input class="manufacturers-check" id="checkbox-makita" type="checkbox" name="checkbox-makita" checked >
+              	<label class="checkbox-makita-item"  for="checkbox-makita" tabindex="0">makita</label>
+              	<input class="manufacturers-check" id="checkbox-dewalt" type="checkbox" name="checkbox-dewalt">
+              	<label class="checkbox-dewalt-item" for="checkbox-dewalt" tabindex="0">dewalt</label>
+              	<input class="manufacturers-check"  id="checkbox-hitachi" type="checkbox" name="checkbox-hitachi" >
+              	<label class="checkbox-hitachi-item" for="checkbox-hitachi" tabindex="0">hitachi</label>  
             	</fieldset>
             	<fieldset class="power-supply">
               	<legend>Питание:</legend>
-              	<input id="battery-power-supply" type="radio" name="supply" checked>
-              	<label for="battery-power-supply">аккумуляторные</label>
-              	<input id="mains-power-supply" type="radio" name="supply">
-              	<label for="mains-power-supply">сетьевые</label>
+              	<input  class="power-supply-radio" id="battery-power-supply" type="radio" name="supply" checked>
+              	<label for="battery-power-supply" tabindex="0">аккумуляторные</label>
+              	<input  class="power-supply-radio" id="mains-power-supply" type="radio" name="supply">
+              	<label for="mains-power-supply" tabindex="0">сетьевые</label>
             	</fieldset>
               <input class="filter-button" type="submit" name="filter-btn" value="показать">
           	</form>
@@ -259,7 +282,7 @@
        	  </div>
 				</section>
     	</div>
-     	<div class="service">
+     	<div class="service-catalog-page">
         <div class="container">
         	<h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
           <p class="service-catalog">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
@@ -267,7 +290,7 @@
         </div>
      	</div>
 		</main>
-    <footer class="main-footer">
+    <footer class="main-footer footer-catalog">
 	  	<div class="container">
 				<nav class="saite-navigation clearfix">
 		  		<a class="main-name-footer" href="index.html">Техномарт</a>	

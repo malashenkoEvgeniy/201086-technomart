@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
-		<header class="main-header">
+		<header class="main-header index-page">
 	  	<div class="user-block">
 	    	<div class="container clearfix">
 		  		<div class="left-item">
@@ -22,8 +22,31 @@
 		  		</div>
 		  		<div class="right-item">
 		    		<a class="bookmark-header" href="#">Закладки: 0</a>
-						<a class="basket" href="#">Корзина: 0</a>
-						<a class="green-background" href="#">Оформить заказ</a>
+						<ul class="basket-list">
+							<li><a href="#" class="basket basket-zero basket-active">Корзина: 0</a></li>
+							<li><a href="#" class="basket">Корзина: 1</a></li>
+							<li><a href="#" class="basket">Корзина: 2</a></li>
+							<li><a href="#" class="basket">Корзина: 3</a></li>
+							<li><a href="#" class="basket">Корзина: 4</a></li>
+							<li><a href="#" class="basket">Корзина: 5</a></li>
+							<li><a href="#" class="basket">Корзина: 6</a></li>
+							<li><a href="#" class="basket">Корзина: 7</a></li>
+							<li><a href="#" class="basket">Корзина: 8</a></li>
+							<li><a href="#" class="basket">Корзина: 9</a></li>
+							<li><a href="#" class="basket">Корзина: 10</a></li>
+							<li><a href="#" class="basket">Корзина: 11</a></li>
+							<li><a href="#" class="basket">Корзина: 12</a></li>
+							<li><a href="#" class="basket">Корзина: 13</a></li>
+							<li><a href="#" class="basket">Корзина: 14</a></li>
+							<li><a href="#" class="basket">Корзина: 15</a></li>
+							<li><a href="#" class="basket">Корзина: 16</a></li>
+							<li><a href="#" class="basket">Корзина: 17</a></li>
+							<li><a href="#" class="basket">Корзина: 18</a></li>
+							<li><a href="#" class="basket">Корзина: 19</a></li>
+						</ul>
+						<div class="green-background">
+							<a  href="#">Оформить заказ</a>
+						</div>
 		  		</div>
 				</div>	
       </div>
@@ -66,21 +89,24 @@
 		  <div  class="main-content container">
 				<div class="our-offers">
 		  		<div class="offer offer1 ">
-		  			Материалы<br><a href="">На любой вкус</a>
+						<span>Материалы</span>
+						<a href="#">На любой вкус</a>
 		  		</div>
 		  		<div class="offer offer2">
-		  			Инструмент<br><a href="">На все случаи</a>
+		  			<span>Инструмент</span>
+		  			<a href="#">На все случаи</a>
 		  		</div>
 		  		<div class="offer offer3">
-		  			Техника<br><a href="">Для стройки</a>
+		  			<span>Техника</span>
+		  			<a href="#">Для стройки</a>
 		  		</div>
 		 	 		<div class="slider-wrap">
 		 		 		<div class="slider">
-		  				<input type="radio" id="btn-1" name="toggle" checked>
-    	    		<input type="radio" id="btn-2" name="toggle">
+		  				<input class="slider-tadio-button" type="radio" id="btn-1" name="toggle" checked>
+    	    		<input class="slider-tadio-button" type="radio" id="btn-2" name="toggle">
 			  			<div class="slider-controls">
-		  					<label for="btn-1"></label>
-          			<label for="btn-2"></label>
+		  					<label class="slider-controls-1" for="btn-1"></label>
+          			<label class="slider-controls-2" for="btn-2"></label>
 		  				</div>
 		  				<div class="slider-inner">
 		  					<div class="slider-slides">
@@ -103,12 +129,18 @@
 		  			</div>
 					</div>
 		  		<div class="offer-wrap">
-		    		<div class="offer offer4">Скидки 50%<br><a href="">На 350 товаров</a></div>
-						<div class="offer offer5">Доставка<br><a href="">Бесплатно</a></div>
+		    		<div class="offer offer4">
+		    			<span>Скидки 50%</span>
+		    			<a href="#">На 350 товаров</a>
+		    		</div>
+						<div class="offer offer5">
+							<span>Доставка</span>
+							<a href="#">Бесплатно</a>
+						</div>
 		  		</div>
 				</div>
         <section class="index-content ">
-          <div class="header-block">
+          <div class="header-block-first">
 		    		<h2>поПулярные товары:</h2>
 		    		<a class="page-btn" href="">все поПулярные товары</a>
 		  		</div>
@@ -168,7 +200,7 @@
 					</div>
 			  </section>
 				<section class="content-producers">
-					<div class="header-block">
+					<div class="header-block-second">
 			  		<h2>Популярные ПРОИзводители:</h2>
 			  		<a class="page-btn" href="">все ПРОИзводители</a>
 					</div>
@@ -332,73 +364,6 @@
      		<a class="next-bay-btn" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
     	</div>
   	</div>
-		<script>
-			var link = document.querySelector(".button-write-us");
-      var popup = document.querySelector(".modal-write-us");
-      var close = popup.querySelector(".modal-content-close");
-			var form = popup.querySelector(".authorization-form");
-			var login = popup.querySelector("[name=login]");
-			var email = popup.querySelector("[name=email]");
-			var storageLogin = localStorage.getItem("login");
-			var storageEmail = localStorage.getItem("email");
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("modal-content-show");
-				if (storageLogin) {
-					login.value = storageLogin;
-				}
-				if (storageEmail) {
-					email.value = storageEmail;
-				}
-				login.focus();
-      });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-				popup.classList.remove("modal-error");
-      });
-				
-				form.addEventListener("submit", function(event) {
-         if (!login.value || !email.value) {
-          event.preventDefault();
-					popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-        } else {
-          localStorage.setItem("login", login.value);
-					localStorage.setItem("email", login.value);
-        }
-      });
-			window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("modal-content-show")) {
-            popup.classList.remove("modal-content-show");
-						popup.classList.remove("modal-error");
-          }
-        }
-      });
-			
-			var mapOpen = document.querySelector(".js-open-map");
-			var mapPopup = document.querySelector(".modal-content-map");
-      var mapClose = mapPopup.querySelector(".modal-content-close");
-			 mapOpen.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.add("modal-content-show");
-      });
-
-      mapClose.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.remove("modal-content-show");
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (mapPopup.classList.contains("modal-content-show")) {
-            mapPopup.classList.remove("modal-content-show");
-          }
-        }
-      });
-		</script>>  	
+		<script src="js/script-min.js"></script>>  	
 	</body>
 </html>
