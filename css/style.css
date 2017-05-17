@@ -332,7 +332,6 @@ body {
 	top: 11px;
 	left: 11px;
 	background: transparent url("../img/sprite.png") no-repeat -1291px -29px;
-	
 }
 
 .contacts p{
@@ -340,7 +339,6 @@ body {
 	line-height: 24px;
 	color: #3d546e;
 	padding-left: 8px;
-
 }
 
 .block-registered-user {
@@ -384,11 +382,11 @@ body {
 }
 
 .registration-login:hover::before {
-	background: transparent url("../img/sprite.png") no-repeat  -1080px -20px;
+	background: transparent url("../img/sprite.png") no-repeat  -1088px -29px;
 }
 
-.registration-login:active::before {
-	background: transparent url("../img/sprite.png") no-repeat -1040px -20px;
+.registration-login:acive::before {
+	background: transparent url("../img/sprite.png") no-repeat -1048px -29px;
 }
 
 .registration-in {
@@ -575,7 +573,7 @@ body {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding-top: 60px;
-	margin-bottom: 30px;
+	margin-bottom: 34px;
 }
 
 .offer {
@@ -589,29 +587,29 @@ body {
 	background-color: #ffbf47;
 	color: #ffffff;
 	padding: 20px 23px;
-	padding-top: 25px;
+	padding-top: 20px;
 	padding-bottom: 17px;
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 }
 
 .offer::after {
 	content: "";
 	position: absolute;
 	bottom: 25px;
-	right: 21px;
-	width: 81px;
+	right: 23px;
+	width: 80px;
 	height: 75px;
-	background:  url("../img/sprite.png") no-repeat;
+	background: transparent url("../img/sprite.png") no-repeat;
 } 
 
 .offer1::after {
-	background-position: -226px -24px;
+	background-position: -225px -24px;
 }
 
 .offer1::before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: -3px;
 	right: 0;
 	width: 60px;
 	height: 60px;
@@ -629,7 +627,7 @@ body {
 }
 
 .offer4::after {
-	background-position: -67px -26px;
+	background-position: -64px -26px;
 }
 
 .offer5::after {
@@ -653,12 +651,16 @@ body {
 	background-color: rgba(204, 204, 204, 0.3);
 }
 
-offer a:active {
+.offer a:active {
 	background-color: rgba(178, 178, 178, 0.3);
 }
 
 .offer1 span {
 	margin-top: 5px;
+}
+
+.offer1 a {
+	margin-left: -1px;
 }
 
 .offer2 {
@@ -671,8 +673,9 @@ offer a:active {
 
 .offer3 {
 	background-color: #dc91d8;
-	padding-top: 10px;
-	padding-bottom: 30px;
+	padding-top: 8px;
+	padding-bottom: 28px;
+	margin-bottom: 20px;
 }
 
 .offer3 span {
@@ -687,13 +690,13 @@ offer a:active {
 
 .offer4 {
 	background-color: #8ed78f;
+	padding-top: 27px;
 	padding-bottom: 12px;
 }
 
 .offer4 span {
 	display: block;
 	margin-top: -6px;
-	
 }
 
 .offer4 a {
@@ -702,7 +705,8 @@ offer a:active {
 }
 
 .offer5 {
-	padding-bottom: 14px;
+	padding-top: 30px;
+	padding-bottom: 12px;
 	background-color: #ffc047;	
 }
 
@@ -728,21 +732,22 @@ offer a:active {
 }
 
 .slider .slider-tadio-button {
-    display: none;
+  display: none;
 }
 
 .slider-inner {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .slider-slides {
-    width: 200%;
+  width: 200%;
 }
 
 .slider-slides .slider-item {
-		float: left;
-    width: 620px;
-    height: 265px;
+	float: left;
+  width: 620px;
+  height: 265px;
+	padding-bottom: 1px;
 }
 
 .slider-item h2 {
@@ -764,6 +769,7 @@ offer a:active {
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
+	padding-top: 3px;
 	margin-left: 20px;
 	margin-top: 0;
 	margin-bottom: 120px;
@@ -811,7 +817,7 @@ offer a:active {
 
 .slider-controls {
 	position: absolute;
-	top: 215px;
+	top: 219px;
 	left: 290px;
 	z-index: 98;
 }
@@ -830,7 +836,6 @@ offer a:active {
   background-color: #ccc;
 	border-radius: 50%;
 }
-
 
 .slider-controls .slider-controls-1,
 .slider-controls .slider-controls-2 {
@@ -887,7 +892,7 @@ offer a:active {
   margin: 0;
   padding: 0;
 	list-style: none;
-	margin-bottom: -12px;
+	margin-bottom: 0;
 }
 
 .breadcrumbs li {
@@ -896,7 +901,8 @@ offer a:active {
   margin: 0;
   padding: 0;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
+	margin-bottom: 0;
 }
 
 .breadcrumbs a {
@@ -961,9 +967,10 @@ offer a:active {
 	text-transform: uppercase;
 	background-color: #f2f6f8;
 	padding-left: 27px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	margin-bottom: 16px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-top: -9px;
+	margin-bottom: 15px;
 }
 
 .header-block-first {
@@ -978,7 +985,8 @@ offer a:active {
 	line-height: 30px;
 	text-transform: uppercase;
 	background-color: #f9f5f0;
-	margin-bottom: 24px;
+	padding-bottom: 8px;
+	margin-bottom: 17px;
 }
 
 .header-block-first h2 {
@@ -986,7 +994,7 @@ offer a:active {
 	font-size: 30px;
 	line-height: 30px;
 	color: #3d546e;
-	margin-left: 25px;
+	margin-left: 24px;
 	padding-top: 5px;
 	padding-left: 5px;
 }
@@ -998,15 +1006,17 @@ offer a:active {
 	line-height: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
-	width: 250px;
-	height: 35px;
+	width: 252px;
+	height: 37px;
 	color: #ffffff;
 	background-color: #ee3643;
 	border-radius: 2px;
 	margin-top: 27px;
 	margin-right: 25px; 
 	margin-bottom: 10px;
-	padding: 10px 50px;
+	padding-left: 54px;
+	padding-right: 50px;
+	padding-top: 10px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -1181,11 +1191,18 @@ offer a:active {
 
 .catalog-item .title {
   min-height: 40px;
-  padding-top:  2px;
-	padding-left: 30px;
-	padding-right: 26px;
+  padding-top:  1px;
+	padding-left: 31px;
+	padding-right: 25px;
+	padding-bottom: 2p;
   margin-top: -7px;
   margin-bottom: 11px;  
+}
+
+.catalog-item span {
+ 	padding-left: 0;
+	padding-right: 6px;
+	padding-top: 1px;
 }
 
 .catalog-item .discount {
@@ -1194,7 +1211,7 @@ offer a:active {
 	line-height: 18px;
   min-height: 20px;
   margin-top: 10px;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
 	padding-left: 2px;
   color: #999999;
   text-decoration: line-through;
@@ -1211,7 +1228,7 @@ offer a:active {
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 11px 20px;
-	padding-bottom: 10px;
+	padding-bottom: 9px;
 	padding-left: 14px;
   color: #ffffff;
   background: #ee3643;
@@ -1223,7 +1240,6 @@ offer a:active {
 .catalog-item:hover {
 	-webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 	box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
-	
 }
 
 .catalog-item .price::after {
@@ -1231,7 +1247,7 @@ offer a:active {
   position: absolute;
   top: 0;
   right: -20px;
-  width: 3px;
+  width: 5px;
   height: 0;
   border: 20px solid white;
   border-left-color: #ee3643;
@@ -1249,7 +1265,8 @@ offer a:active {
 	line-height: 30px;
 	text-transform: uppercase;
 	background-color: #f9f5f0;
-	margin-bottom: 24px;
+	padding-bottom: 5px;
+	margin-bottom: 19px;
 }
 
 .header-block-second h2 {
@@ -1265,20 +1282,20 @@ offer a:active {
 
 .header-block-second .page-btn {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	font-size: 14px;
 	line-height: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
-	width: 250px;
-	height: 35px;
+	width: 253px;
+	height: 37px;
 	color: #ffffff;
 	background-color: #ee3643;
 	border-radius: 2px;
-	margin-top: 27px;
+	margin-top: 25px;
 	margin-right: 25px; 
 	margin-bottom: 10px;
-	padding: 10px 50px;
+	padding-top: 10px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -1294,7 +1311,6 @@ offer a:active {
 .header-block-second .page-btn:visited {
 	background-color: #ee3643;
 }
-
 
 .content-producers h2 {
 	margin-left: 20px;
@@ -1323,10 +1339,27 @@ offer a:active {
 
 .producers-item {
 	display: table;
-	width: 220px;
-	height: 145px;
+	width: 219px;
+	height: 143px;
 	border: 1px solid #eaeaea;
 	margin-bottom: 20px;
+}
+
+.producers-item:nth-child(5) {
+	padding-top: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+
+.producers-item:nth-child(7) {
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+.producers-item:nth-child(8) {
+	padding-bottom: 2px;
+	padding-left: 2px;
+	box-sizing: border-box;
 }
 
 .producers-item:hover {
@@ -1337,15 +1370,13 @@ offer a:active {
 .producers-item:active {
 	-webkit-box-shadow: 0 4px 10px 0  rgba(41, 52, 73, 0.5);
 	box-shadow: 0 4px 10px 0  rgba(41, 52, 73, 0.5);
-	opacity: 0.3;
-		
+	opacity: 0.3;	
 }
 
 .producers-item a {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	
 }
 
 .main-page-catalog {
@@ -1371,7 +1402,7 @@ offer a:active {
 	text-transform: uppercase;
 	padding-left: 19px;
 	margin-top: 0px;
-	padding-top: 10px;
+	padding-top: 12px;
 	background-color: #f7f3ec;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1401,6 +1432,11 @@ offer a:active {
 	margin-bottom: -10px;
 }
 
+.filter-form .composite-filter {
+	border-bottom: 2px solid  #f7f3ec;
+	margin-bottom: 18px;
+}
+
 .filter-range {
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
@@ -1411,7 +1447,7 @@ offer a:active {
 	margin-top: 18px;
 	margin-left: 0px;
 	padding-left: 0;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .range-controls {
@@ -1423,7 +1459,7 @@ offer a:active {
 	padding-right: 20px;
   padding-left: 20px;
 	padding-bottom: 5px;
-	margin-bottom: -5px;
+	margin-bottom: 5px;
 	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
 }
@@ -1434,8 +1470,7 @@ offer a:active {
   height: 2px;
   background: #d7dcde;
 	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
-	
+	box-sizing: inherit;	
 }
 
 .range-controls .bar {
@@ -1473,7 +1508,6 @@ offer a:active {
 
 .price-controls {
   font-size: 0;
-	
 }
 
 .price-controls label {
@@ -1481,46 +1515,38 @@ offer a:active {
 	vertical-align: top;
 	font-size: 17px;
   width: 50%;
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
-	padding-bottom: 25px;
-	border-bottom: 2px solid #f7f3ec;
+	margin-top: 7px;
+	margin-right: 0px;
+}
+
+.price-controls .min-price {
+	width: 49%;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+
+.price-controls .max-price {
+	box-sizing: border-box;
+	text-align: left;	
+}
+
+.price-controls .max-price input {
+	margin-left: 6px;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 2px;
 }
 
 .price-controls input {
   font-size: 17px;
-	width: 85px;
-	margin-left: 20px;
-  padding: 10px 0px;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
   color: #000000;
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
+	width: 74px;
+	padding: 8px 10px;
 	border: none;
   border-radius: 5px;
   background: #f1f1f1;
-	padding-left: 8px;
-	padding-top: 5px;
-}
-
-.min-price input {
-	position: absolute;
-	top: 30px;
-	margin-left: 0;
-	
-}
-
-.max-price input {
-	position: absolute;
-	top: 30px;
-	padding-left: 0;
-}
-
-.max-price,
-.min-price {
-	position: relative;
-	top: -9px;
-	padding-top: 20px;
 }
 
 .manufacturers {
@@ -1566,8 +1592,8 @@ offer a:active {
 	content: "";
 	position: absolute;
 	top: 0;
-	left: -4px;
-	width: 27px;
+	left: -5px;
+	width: 32px;
 	height: 27px;
 	background: transparent url("../img/sprite.png") no-repeat  -608px -29px;
 }
@@ -1581,11 +1607,11 @@ offer a:active {
 }
 
 .manufacturers-check:checked + label::before {
-	background-position: -699px -30px;
+	background-position: -698px -29px;
 }
 
 .manufacturers-check:checked + label:hover::before {
-	background-position: -652px -30px;
+	background-position: -651px -29px;
 }
 
 .manufacturers-check + label:focus {
@@ -1608,9 +1634,9 @@ offer a:active {
 	font-size: 15px;
 	line-height: 20px;
 	text-transform: uppercase;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.09em;
 	margin-bottom: 20px;
-	padding-left: 40px;
+	padding-left: 34px;
 	cursor: pointer;
 }
 
@@ -1618,14 +1644,14 @@ offer a:active {
 	content: "";
 	position: absolute;
 	top: -4px;
-	left: -4px;
+	left: -3px;
 	width: 27px;
 	height: 27px;
-	background:  url("../img/sprite.png") no-repeat  -837px -27px;
+	background:  url("../img/sprite.png") no-repeat  -839px -29px;
 }
 
 .power-supply label:hover::before {
-	background-position: -792px -27px;
+	background-position: -794px -29px;
 } 
 
 .power-supply-radio {
@@ -1656,12 +1682,14 @@ offer a:active {
 	line-height: 18px;
 	text-transform: uppercase;
 	margin-top: 80px;
-	padding: 10px 25px;
+	padding: 10px 24px;
 }
 
 .sort-block {
   background-color: #f7f3ec;
-	margin-bottom: 11px;  
+	height: 40px;
+	margin-bottom: 19px;  
+	padding-bottom: 0;
 }
 
 .sort-block h2 {
@@ -1674,15 +1702,13 @@ offer a:active {
 	font-weight: normal;
 	text-transform: uppercase;
 	padding-left: 19px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	padding-bottom: 0;
 }
 
 .sort-block ul {
 	float: right;
   width: 470px;
-	min-height: 40px;
-  margin: 0;
+	margin: 0;
 	margin-right: -7px;
   padding: 0;
 }
@@ -1705,7 +1731,7 @@ offer a:active {
 	opacity: 0.3;
 	border-bottom: 1px dashed #ee3643;
 	padding-left: 0;
-	padding-bottom: 0px;
+	padding-bottom: 0;
 	padding-top: 10px;
 }
 
@@ -1778,7 +1804,7 @@ a.arrow {
 
 .pagination {
   min-width: 280px;
-  padding-top: 25px;
+  padding-top: 23px;
   white-space: nowrap; 
 	margin-bottom: 49px;
 }
@@ -1798,12 +1824,16 @@ a.arrow {
 
 .pagination a{
 	display: block;
- font-size: 13px;
+	font-size: 13px;
 	line-height: 18px;
 	text-decoration: none;
 	color: #000000;
-	padding: 10px 15px;
+	padding-top: 10px;
+	padding-left: 14px;
+	padding-bottom: 10px;
+	padding-right: 14px;
 	margin-right: 10px;
+	margin-top: 6px;
 	border-radius: 3px;
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
@@ -1831,6 +1861,7 @@ a.arrow {
 
 .service {
 	background-color: #f3f7f9; 
+	padding-top: 10px;
 	padding-bottom: 90px;
 	
 }
@@ -1859,7 +1890,7 @@ a.arrow {
 }
 
 .service-catalog-page p {
-	margin-bottom: 70px;
+	margin-bottom: 68px;
 }
 
 .service-catalog {
@@ -1970,6 +2001,7 @@ a.arrow {
 	left: 320px;
 	top: -43px;
 	width: 370px;
+	z-index: 999;
 }
 
 .description h3 {
@@ -1983,9 +2015,12 @@ a.arrow {
 }
 
 .description p {
+	position: absolute;
 	font-size: 13px;
 	line-height: 24px;
 	font-family:  'PT Sans', Arial, sans-serif;
+	top: 85px;
+	z-index: 9999;
 }
 
 .about-us {
@@ -2009,7 +2044,7 @@ a.arrow {
 	font-family:  'Cuprum', Arial, sans-serif;
 	text-transform: uppercase;
 	padding-top: 50px;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
 
 .about-us p {
@@ -2036,7 +2071,7 @@ a.arrow {
 
 .our-company li {
 	position: relative;
-	padding-bottom: 18px;
+	padding-bottom: 19px;
 	padding-left: 35px;
 }
 
@@ -2099,9 +2134,9 @@ a.arrow {
 }
 
 .our-contacts .page-btn {
-	width: 180px;
+	width: 177px;
 	padding: 10px 61px;
-	padding-left: 63px;
+	padding-left: 65px;
 	padding-right: 60px;
 }
 
